@@ -1,0 +1,1 @@
+fetch("https://ranekapi.origamid.dev/json/api/produto")
