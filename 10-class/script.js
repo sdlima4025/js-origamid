@@ -4,13 +4,14 @@
  * OBS: está transição pode ser feita em css com tyrasition ou ...
  * */
 
+// CRIANDO A CLASSE
 class SmoothScroll {
   constructor(links) {
     this.linkElements = document.querySelectorAll(links);
 
     this.addClickEvent();
   }
-
+// CRIANDO O EVENTOS
   handleClick(event) {
     event.preventDefault();
     const href = event.currentTarget.getAttribute("href");
@@ -27,7 +28,11 @@ class SmoothScroll {
     });
   }
 }
-// extendendo a classe
+
+/** extendendo a classe 
+ * USANDO SUPER PARA ACESSAR O ELEMENTO 
+ * USANDO BIND PARA ACESSAR A CLASSE PAI
+ * */ 
 class ActiveSmoothScroll extends SmoothScroll {
     constructor(links, sections) {
         super(links);
