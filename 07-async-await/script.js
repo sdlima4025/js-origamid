@@ -17,7 +17,7 @@ const requisicao = fetchProdutos (
     "https://ranekapi.origamid.dev/json/api/produto"
 
 )
-requisicao.then(Response => {
-    console.log(Response)
+requisicao.then(response => {
+    console.log(response)
 
 });
